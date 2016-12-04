@@ -14,12 +14,12 @@ namespace _02._01
             {
                 b.Select(c => c).ToList().ForEach(c =>
                 {
-                    pos += (c == 'U' && pos - gridSize >= min) ? -gridSize :
+                    pos +=  (c == 'U' && pos - gridSize >= min) ? -gridSize :
                             (c == 'D' && pos + gridSize <= max) ? gridSize :
                             (c == 'L' && pos % gridSize != min) ? -min :
                             (c == 'R' && pos % gridSize >= min) ? min : 0;
                 });
-
+ 
                 return a + pos.ToString();
             });
 
