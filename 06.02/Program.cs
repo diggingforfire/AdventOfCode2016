@@ -21,8 +21,8 @@ namespace _06._02
                .Select(p => p.key.ToString())
                .Aggregate((a, b) => a.ToString() + b.ToString());
 
-                    Console.WriteLine(result);
-                    Console.ReadKey();
+            Console.WriteLine(result);
+            Console.ReadKey();
         }
     }
 }
